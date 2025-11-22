@@ -1,6 +1,6 @@
 # Context7
 
-<img src="../../../logos/context7.svg" width="200" alt="Context7 Logo"/>
+![Context7 Logo](../../../logos/context7.svg)
 
 ## Overview
 
