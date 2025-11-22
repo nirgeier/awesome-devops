@@ -24,6 +24,7 @@
    - Add your tool to the appropriate category in the `tools/` directory.
    - Use the `scripts/create_readmes.sh` script to generate a README for your tool.
    - Ensure the tool follows the existing structure and naming conventions.
+   * **Validate your contribution**: Run `python3 scripts/validate_readmes.py` to ensure your README follows the required format.
 
 5. **Update Logos** (if applicable):
    - If your tool has a logo, add it to the `logos/` directory.
@@ -48,7 +49,13 @@
 ## Guidelines
 
 - **Tool Categories**: Place tools in the most appropriate category. If a new category is needed, discuss it in your PR.
-- **README Format**: Use the provided script to generate READMEs. Ensure all fields are filled accurately.
+* **README Format**: Use the provided script to generate READMEs. Ensure all fields are filled accurately. READMEs must follow this structure:
+  * `# Tool Name`
+  * `![Tool Name Logo](../logos/tool-logo.svg)`
+  * `## Overview`
+  * `## Key Features` (with bullet points)
+  * `## Getting Started`
+  * `## Resources` (with links)
 - **Quality**: Only submit tools that are actively maintained and relevant to DevOps.
 - **Duplicates**: Check if the tool already exists before submitting.
 - **Links**: Provide official documentation, website, and repository links where possible.
@@ -57,11 +64,11 @@
 
 When submitting a pull request, please ensure:
 
-- [ ] The tool is added to the correct category in `tools/`.
-- [ ] A README.md is created for the tool using the script.
-- [ ] Logos are added and mapped if available.
-- [ ] All links are valid and point to official sources.
-- [ ] The commit message follows the format: "Add/Updated [`Tool Name`] to Awesome DevOps".
-- [ ] No unrelated changes are included.
+* [ ] The tool is added to the correct category in `tools/`.
+* [ ] A README.md is created for the tool using the script.
+* [ ] Logos are added and mapped if available.
+* [ ] All links are valid and point to official sources.
+* [ ] The commit message follows the format: "Add/Updated [`Tool Name`] to Awesome DevOps".
+* [ ] No unrelated changes are included.
 
 Thank you for helping make Awesome DevOps better!

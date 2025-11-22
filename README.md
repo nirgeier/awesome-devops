@@ -1,7 +1,7 @@
 # 🚀 Awesome DevOps
 
 * A curated list of awesome DevOps tools, technologies, and resources to help you build, deploy, and maintain modern applications.
-* If you want to contribute, please check out the [Contributing Guidelines](https://github.com/nirgeier/awesome-devops?tab=contributing-ov-file).
+* If you want to contribute, please check out the [Contributing Guidelines](#tab=contributing-ov-file).
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
@@ -601,6 +601,167 @@
 | **[mindsdb](tools/MCP/mindsdb/)** | AI-powered database management and analytics. |
 | **[playwright-mcp](tools/MCP/playwright-mcp/)** | Browser automation and web scraping with Playwright. |
 | **[serena](tools/MCP/serena/)** | AI-powered development assistant. |
+
+---
+
+## 📚 Documentation
+
+### Repository Structure
+
+This repository maintains a curated list of DevOps tools organized by category. Each tool entry follows a standardized structure:
+
+```
+awesome-devops/
+├── README.md                 # Main repository documentation and tool listings
+├── .github/
+│   └── copilot-instructions.md  # AI agent instructions for automation
+├── tools/                    # Tool entries organized by category
+│   ├── CategoryName/
+│   │   └── ToolName/
+│   │       └── README.md     # Individual tool documentation
+├── logos/                    # Logo management system
+│   ├── README.md            # Logo system documentation
+│   ├── apply_logos.py       # Logo URL replacement script
+│   ├── fetch_logos.sh       # Logo downloading automation
+│   └── mapping.csv          # Logo download tracking
+└── scripts/                  # Automation and validation scripts
+    ├── create_readmes.sh    # Template generation for new tools
+    ├── update_summaries.py  # Content synchronization
+    └── validate_readmes.py  # Format validation and compliance checking
+```
+
+### Tool Entry Format
+
+Every tool follows this exact README structure:
+
+```markdown
+# Tool Name
+
+![Tool Name Logo](../logos/tool-logo.svg)
+
+## Overview
+
+[Description from main README table]
+
+## Key Features
+
+- Bullet points of main features
+
+## Getting Started
+
+Installation and usage examples with code blocks
+
+## Resources
+
+- [Official Website](url)
+- [Documentation](url)
+- [GitHub Repository](url)
+```
+
+### Adding a New Tool
+
+1. **Create Directory Structure**
+
+   ```bash
+   mkdir -p tools/CategoryName/ToolName
+   cd tools/CategoryName/ToolName
+   ```
+
+2. **Generate Template**
+
+   ```bash
+   # From repository root
+   bash scripts/create_readmes.sh
+   ```
+
+3. **Add Logo**
+
+   ```bash
+   # Fetch from Simple Icons CDN
+   bash logos/fetch_logos.sh toolname
+
+   # Apply local logo references
+   python3 logos/apply_logos.py
+   ```
+
+4. **Update Main README**
+   * Add tool entry to appropriate category table
+   * Ensure description matches tool README overview
+
+5. **Validate**
+
+   ```bash
+   python3 scripts/validate_readmes.py
+   ```
+
+### Logo Management
+
+The repository uses a comprehensive logo management system:
+
+* **Storage**: Logos stored as `logos/toolname.svg`
+* **Referencing**: `../logos/toolname.svg` (from tool directory)
+* **Fetching**: `bash logos/fetch_logos.sh toolname`
+* **Application**: `python3 logos/apply_logos.py` replaces external URLs
+* **Validation**: Logo existence checked during README validation
+
+### Validation & Quality Assurance
+
+Before submitting contributions, run validation:
+
+```bash
+# Validate all READMEs
+python3 scripts/validate_readmes.py
+
+# Returns exit code 1 on validation failures
+# Checks: header format, logo existence, required sections, content structure
+```
+
+### Content Synchronization
+
+Tool descriptions in main README tables are the source of truth:
+
+```bash
+# Sync descriptions from main README to individual tool READMEs
+python3 scripts/update_summaries.py
+```
+
+### Development Workflow
+
+1. **Fork and Clone** the repository
+2. **Create Feature Branch** for your changes
+3. **Add/Update Tools** following the contribution guidelines
+4. **Run Validation** to ensure compliance
+5. **Test Changes** locally
+6. **Submit Pull Request** with clear description
+
+### Automation Scripts
+
+| Script | Purpose | Usage |
+|--------|---------|-------|
+| `create_readmes.sh` | Generate standardized README templates | `bash scripts/create_readmes.sh` |
+| `validate_readmes.py` | Check README format compliance | `python3 scripts/validate_readmes.py` |
+| `update_summaries.py` | Sync descriptions from main README | `python3 scripts/update_summaries.py` |
+| `fetch_logos.sh` | Download logos from Simple Icons | `bash logos/fetch_logos.sh toolname` |
+| `apply_logos.py` | Replace external logo URLs with local paths | `python3 logos/apply_logos.py` |
+
+### AI Agent Integration
+
+The repository includes comprehensive instructions for AI agents in `.github/copilot-instructions.md`, covering:
+
+* Project architecture and structure
+* Critical workflows and conventions
+* Naming standards and path resolution
+* Common pitfalls and validation requirements
+* Integration points between components
+
+### Contributing Guidelines
+
+* Follow the exact tool README format
+* Ensure logos are available and properly referenced
+* Run validation before submitting PRs
+* Keep main README table descriptions synchronized
+* Use PascalCase for tool directories, lowercase with hyphens for logo files
+* Test all changes locally before submission
 
 ---
 
