@@ -1,21 +1,27 @@
 # Python
+<img src="logos/python.svg" width="120"/>
 
 ## Overview
-
-Programming language for quick integration and systems work.
+Programming language for quick integration, automation, and systems work.
 
 ## Key Features
-
-- Feature 1
-- Feature 2
-- Feature 3
+- Built-in modules for networking, filesystem operations, subprocesses, and HTTP clients
+- Large ecosystem of DevOps-oriented libraries (Requests, PyYAML, Boto3, Paramiko)
+- Easy to script, portable across platforms, and integrates with almost any infrastructure
 
 ## Getting Started
-
 Installation and basic usage instructions.
 
-## Resources
+Basic Setup:
+```
+python3 -m venv .venv
+source .venv/bin/activate
+pip install requests pyyaml boto3
+```
 
-- [Official Website](https://example.com)
-- [Documentation](https://docs.example.com)
-- [GitHub Repository](https://github.com/example/Python)
+
+## Resources
+- Official Website: https://www.python.org
+- Documentation: https://docs.python.org/3/
+- GitHub Repository: https://github.com/python/cpython
+- RealPython Tutorials: https://realpython.com
