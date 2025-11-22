@@ -2,6 +2,20 @@
 
 ![OpenShift Logo](../../../logos/openshift.svg)
 
+## 📖 Table of Contents
+
+- [Overview](#overview)
+- [Key Features](#key-features)
+- [OpenShift vs. Kubernetes](#openshift-vs-kubernetes)
+- [High-Level Architecture](#high-level-architecture)
+- [Core OpenShift Concepts](#core-openshift-concepts)
+- [Getting Started](#getting-started)
+- [CLI Cheatsheet](#openshift-cli-oc-cheatsheet)
+- [Troubleshooting CRC](#troubleshooting-crc)
+- [Resources](#resources)
+
+---
+
 ## Overview
 
 Red Hat OpenShift is an enterprise-grade container application platform built on top of Kubernetes. It provides a complete solution for building, deploying, and managing containerized applications across hybrid cloud environments.
@@ -10,12 +24,12 @@ OpenShift comes with comprehensive developer tools, integrated security, and aut
 
 ## Key Features
 
-- **Developer & Administrator Consoles**: distinct web-based GUIs for managing workloads and cluster health.
-- **Source-to-Image (S2I)**: a toolkit that builds ready-to-run container images directly from source code.
-- **Built-in CI/CD**: integrated pipelines using OpenShift Pipelines (based on Tekton).
-- **Integrated Registry**: an internal, private container registry to manage image streams.
-- **Strict Security**: default use of Security Context Constraints (SCCs) and SELinux for enterprise compliance.
-- **Operator Hub**: a catalog of certified operators for one-click service deployment (databases, monitoring, etc.).
+* **Developer & Administrator Consoles:** Distinct web-based GUIs for managing workloads and cluster health.
+* **Source-to-Image (S2I):** A toolkit that builds ready-to-run container images directly from source code.
+* **Built-in CI/CD:** Integrated pipelines using OpenShift Pipelines (based on Tekton).
+* **Integrated Registry:** An internal, private container registry to manage image streams.
+* **Strict Security:** Default use of Security Context Constraints (SCCs) and SELinux for enterprise compliance.
+* **Operator Hub:** A catalog of certified operators for one-click service deployment (databases, monitoring, etc.).
 
 ## OpenShift vs. Kubernetes
 
@@ -31,7 +45,7 @@ OpenShift is an upstream distribution of Kubernetes that integrates additional t
 | **Updates** | Manual or managed by cloud provider. | Automated "Over-the-Air" updates for the OS and Cluster versions. |
 | **Management** | `kubectl` CLI and basic dashboard (often unused). | `oc` CLI and a fully featured **Web Console** (GUI). |
 
-## High-Level Architecture
+## 🏗 High-Level Architecture
 
 OpenShift relies on a highly automated architecture powered by **Operators** (software robots that manage the system).
 
@@ -57,7 +71,7 @@ Where your applications actually run.
 - **Red Hat CoreOS (RHCOS):** An immutable, minimal operating system designed specifically for running containers. It cannot be modified directly; it is updated automatically by the cluster.
 - **Operators:** A method of packaging, deploying, and managing a Kubernetes application. In OpenShift, **everything is an Operator**—from the web console to the network plugin.
 
-## Core OpenShift Concepts
+## 🧠 Core OpenShift Concepts
 
 Beyond standard Kubernetes objects (Pods, Services, ConfigMaps), OpenShift introduces specific custom resources to streamline development.
 
@@ -80,7 +94,7 @@ Kubernetes uses Ingress, OpenShift uses **Routes**.
 
 An **ImageStream** does not contain the actual image data, but presents a single virtual view of related images (like specific tags of a Docker image).
 
-- It watches for updates: If a base image changes in the registry, the ImageStream sees it and can trigger a new build or deployment automatically based on that change (e.g., when a new version of a base image is pushed to Docker Hub).
+- It watches for updates: If a base image changes in the registry, the ImageStream sees it and can trigger a new build or deployment automatically based on that change.
 
 ### Dynamic Storage
 
@@ -95,7 +109,7 @@ OpenShift automates the provisioning of persistent data using **StorageClasses**
 
 Run a minimal OpenShift 4 cluster on your local machine or server using [Red Hat OpenShift Local](https://developers.redhat.com/products/openshift-local/overview) (formerly CodeReady Containers).
 
-**Requirements:** 4 vCPUs, 10GB RAM (Allocated), 35GB disk space.
+> **Requirements:** 4 vCPUs, 15GB RAM (Allocated), 35GB disk space.
 
 ```bash
 # 1. Download CRC from https://console.redhat.com/openshift/create/local
@@ -142,7 +156,7 @@ oc expose service/django-ex
 oc get route
 ```
 
-## OpenShift CLI (`oc`) Cheatsheet
+## 📄 OpenShift CLI (`oc`) Cheatsheet
 
 ### Authentication & Projects
 
@@ -181,21 +195,19 @@ oc get route
 | `is` | ImageStream |
 | `dc` | DeploymentConfig |
 
-## Troubleshooting CRC
+## 🛠 Troubleshooting CRC
 
 ### Common Issues
 
-Pull Secret: Ensure you copied the full Pull Secret from the Red Hat dashboard into the prompt during crc start, or save it to a file and run crc start -p pull-secret.txt.
+* **Pull Secret:** Ensure you copied the full Pull Secret from the Red Hat dashboard into the prompt during `crc start`, or save it to a file and run `crc start -p pull-secret.txt`.
+* **Resources:** CRC is resource-intensive. If it fails to start, ensure you are not running other heavy VMs simultaneously, or increase allocated resources using `crc config set`.
+* **DNS Issues:** If `oc login` fails, ensure your machine can resolve `api.crc.testing`. You may need to disable VPNs during the initial setup.
 
-Resources: CRC is resource-intensive. If it fails to start, ensure you are not running other heavy VMs simultaneously, or increase allocated resources using crc config set.
-
-DNS Issues: If oc login fails, ensure your machine can resolve api.crc.testing. You may need to disable VPNs during the initial setup.
-
-## Resources
+## 📚 Resources
 
 - [Official Website](https://www.redhat.com/en/technologies/cloud-computing/openshift)
 - [Documentation](https://docs.openshift.com/)
 - [Interactive Learning Portal](https://learn.openshift.com/)
-- [CLI Tools Download](https://www.google.com/search?q=https://console.redhat.com/openshift/downloads)
+- [CLI Tools Download](https://console.redhat.com/openshift/downloads)
 - [GitHub Repository](https://github.com/openshift/origin)
 - [OpenShift YouTube Channel](https://www.youtube.com/c/openshift)
