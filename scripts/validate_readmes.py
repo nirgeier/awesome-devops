@@ -91,7 +91,7 @@ def validate_readme_format(readme_path, tool_name, tool_path):
 
 def main():
     """Main function to validate all tool READMEs."""
-    base_path = Path('/Users/nirg/repositories/awesome-devops')
+    base_path = Path(__file__).resolve().parent.parent
     tools_path = base_path / 'tools'
 
     if not tools_path.exists():
