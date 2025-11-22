@@ -116,7 +116,12 @@ Run a minimal OpenShift 4 cluster on your local machine or server using [Red Hat
 
 # 2. Extract the archive and move the 'crc' binary to your $PATH
 
-# Set up the host environment (one-time configuration)
+# 3. Allocate resources (adjust based on your machine's capacity)
+crc config set cpus 4
+crc config set memory 16384
+crc config set disk-size 50
+
+# 4. Set up the host environment (one-time configuration)
 crc setup
 
 # Start the cluster (requires the Pull Secret from the download page)
