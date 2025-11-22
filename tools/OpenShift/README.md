@@ -24,12 +24,12 @@ OpenShift comes with comprehensive developer tools, integrated security, and aut
 
 ## Key Features
 
-* **Developer & Administrator Consoles:** Distinct web-based GUIs for managing workloads and cluster health.
-* **Source-to-Image (S2I):** A toolkit that builds ready-to-run container images directly from source code.
-* **Built-in CI/CD:** Integrated pipelines using OpenShift Pipelines (based on Tekton).
-* **Integrated Registry:** An internal, private container registry to manage image streams.
-* **Strict Security:** Default use of Security Context Constraints (SCCs) and SELinux for enterprise compliance.
-* **Operator Hub:** A catalog of certified operators for one-click service deployment (databases, monitoring, etc.).
+- **Developer & Administrator Consoles:** Distinct web-based GUIs for managing workloads and cluster health.
+- **Source-to-Image (S2I):** A toolkit that builds ready-to-run container images directly from source code.
+- **Built-in CI/CD:** Integrated pipelines using OpenShift Pipelines (based on Tekton).
+- **Integrated Registry:** An internal, private container registry to manage image streams.
+- **Strict Security:** Default use of Security Context Constraints (SCCs) and SELinux for enterprise compliance.
+- **Operator Hub:** A catalog of certified operators for one-click service deployment (databases, monitoring, etc.).
 
 ## OpenShift vs. Kubernetes
 
@@ -204,9 +204,9 @@ oc get route
 
 ### Common Issues
 
-* **Pull Secret:** Ensure you copied the full Pull Secret from the Red Hat dashboard into the prompt during `crc start`, or save it to a file and run `crc start -p pull-secret.txt`.
-* **Resources:** CRC is resource-intensive. If it fails to start, ensure you are not running other heavy VMs simultaneously, or increase allocated resources using `crc config set`.
-* **DNS Issues:** If `oc login` fails, ensure your machine can resolve `api.crc.testing`. You may need to disable VPNs during the initial setup.
+- **Pull Secret:** Ensure you copied the full Pull Secret from the Red Hat dashboard into the prompt during `crc start`, or save it to a file and run `crc start -p pull-secret.txt`.
+- **Resources:** CRC is resource-intensive. If it fails to start, ensure you are not running other heavy VMs simultaneously, or increase allocated resources using `crc config set`.
+- **DNS Issues:** If `oc login` fails, ensure your machine can resolve `api.crc.testing`. You may need to disable VPNs during the initial setup.
 
 ## Resources
 
