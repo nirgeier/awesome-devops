@@ -550,16 +550,28 @@
 | **[Streisand](tools/Streisand)** | Automated VPN service setup. |
 | **[VyOS](tools/VyOS)** | Open-source network OS for routing and firewall. |
 
+
 ## Databases
 
 | Tool | Description |
 |------|-------------|
-| **[Apache HBase](tools/Apache/HBase)** | Distributed, versioned, non-relational database. |
-| **[Cassandra](tools/Cassandra)** | Manage massive amounts of data, fast, without losing sleep. |
+| **[Apache HBase](tools/ApacheHBase)** | Distributed, versioned, non-relational database. |
+| **[Cassandra](tools/Cassandra)** | Manage massive amounts of data fast, without losing sleep. |
 | **[Couchbase](tools/Couchbase)** | Distributed multi-model NoSQL document-oriented database. |
 | **[CouchDB](tools/CouchDB)** | Database that completely embraces the web. |
 | **[etcd](tools/etcd)** | Distributed reliable key-value store for critical data. |
-## Databases
+| **[LevelDB](tools/LevelDB)** | Fast key-value storage library. |
+| **[MariaDB](tools/MariaDB)** | Fast, scalable, and robust relational database. |
+| **[MySQL](tools/MySQL)** | Open-source relational database management system. |
+| **[PostgreSQL](tools/PostgreSQL)** | Powerful, open-source object-relational database. |
+| **[RethinkDB](tools/RethinkDB)** | Open-source database for the real-time web. |
+| **[RocksDB](tools/RocksDB)** | Embeddable, persistent key-value store for fast storage. |
+| **[ScyllaDB](tools/ScyllaDB)** | NoSQL data store using the Seastar framework. |
+| **[SQLite](tools/SQLite)** | Small, fast, self-contained, high-reliability SQL engine. |
+| **[usql](tools/usql)** | Universal command-line interface for SQL databases. |
+| **[TiDB](tools/TiDB)** | MySQL-compatible distributed SQL database designed for horizontal scalability and high availability. |
+| **[TiKV](tools/TiKV)** | Distributed, highly available transactional key-value store powering TiDB’s storage layer. |
+
 Tool | Description
 ---- | -----------
 **[Apache HBase](tools/ApacheHBase)** | Distributed, versioned, non-relational database.
@@ -578,6 +590,19 @@ Tool | Description
 **[usql](tools/usql)** | Universal command-line interface for SQL databases.
 **[TiDB](tools/TiDB)** | MySQL-compatible distributed SQL database designed for horizontal scalability and high availability.
 **[TiKV](tools/TiKV)** | Distributed, highly available transactional key-value store powering TiDB’s storage layer.
+=======
+| **[LevelDB](tools/LevelDB)** | Fast key-value storage library. |
+| **[MariaDB](tools/MariaDB)** | Fast, scalable, and robust database with a rich ecosystem. |
+| **[MySQL](tools/MySQL)** | Open-source relational database management system. |
+| **[PostgreSQL](tools/PostgreSQL)** | Powerful, open-source object-relational database system. |
+| **[RethinkDB](tools/RethinkDB)** | Open-source database for the real-time web. |
+| **[RocksDB](tools/RocksDB)** | Embeddable, persistent key-value store for fast storage. |
+| **[ScyllaDB](tools/ScyllaDB)** | NoSQL data store using the seastar framework, compatible with Apache Cassandra. |
+| **[SQLite](tools/SQLite)** | Small, fast, self-contained, high-reliability SQL database engine. |
+| **[usql](tools/usql)** | Universal command-line interface for SQL databases. |
+| **[TiDB](tools/TiDB)** | MySQL-compatible distributed SQL database designed for horizontal scalability and high availability. |
+| **[TiKV](tools/TiKV)** | Distributed, highly available transactional key-value store powering TiDB’s storage layer. |
+>>>>>>> ee1d589 (Fix: corrected Networking Tools table formatting)
 
 ## Web Servers
 
@@ -597,6 +622,16 @@ Tool | Description
 | **[Cert Manager](tools/Cert-Manager)** | Kubernetes add-on for automating TLS certificate management. |
 | **[Certbot](tools/Certbot)** | Automate using Let's Encrypt certificates on manually-managed websites. |
 | **[Let's Encrypt](tools/Lets-Encrypt)** | Free, automated, and open Certificate Authority. |
+
+## Networking Tools
+
+| Tool | Description |
+|------|-------------|
+| **[dig](tools/dig/)** | DNS lookup utility for querying DNS servers. |
+| **[nslookup](tools/nslookup/)** | DNS record lookup tool for troubleshooting DNS records. |
+| **[tcpdump](tools/tcpdump/)** | Packet capture and low-level network traffic analysis tool. |
+| **[mtr](tools/mtr/)** | Combined ping + traceroute tool for deep network diagnostics. |
+| **[nmap](tools/nmap/)** | Network scanning and security auditing tool for discovering hosts & services. |
 
 ## MCP
 
