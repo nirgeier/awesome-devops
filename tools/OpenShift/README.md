@@ -45,7 +45,7 @@ OpenShift is an upstream distribution of Kubernetes that integrates additional t
 | **Updates** | Manual or managed by cloud provider. | Automated "Over-the-Air" updates for the OS and Cluster versions. |
 | **Management** | `kubectl` CLI and basic dashboard (often unused). | `oc` CLI and a fully featured **Web Console** (GUI). |
 
-## 🏗 High-Level Architecture
+## High-Level Architecture
 
 OpenShift relies on a highly automated architecture powered by **Operators** (software robots that manage the system).
 
@@ -71,7 +71,7 @@ Where your applications actually run.
 - **Red Hat CoreOS (RHCOS):** An immutable, minimal operating system designed specifically for running containers. It cannot be modified directly; it is updated automatically by the cluster.
 - **Operators:** A method of packaging, deploying, and managing a Kubernetes application. In OpenShift, **everything is an Operator**—from the web console to the network plugin.
 
-## 🧠 Core OpenShift Concepts
+## Core OpenShift Concepts
 
 Beyond standard Kubernetes objects (Pods, Services, ConfigMaps), OpenShift introduces specific custom resources to streamline development.
 
@@ -161,7 +161,7 @@ oc expose service/django-ex
 oc get route
 ```
 
-## 📄 OpenShift CLI (`oc`) Cheatsheet
+## OpenShift CLI (`oc`) Cheatsheet
 
 ### Authentication & Projects
 
@@ -200,7 +200,7 @@ oc get route
 | `is` | ImageStream |
 | `dc` | DeploymentConfig |
 
-## 🛠 Troubleshooting CRC
+## Troubleshooting CRC
 
 ### Common Issues
 
@@ -208,7 +208,7 @@ oc get route
 * **Resources:** CRC is resource-intensive. If it fails to start, ensure you are not running other heavy VMs simultaneously, or increase allocated resources using `crc config set`.
 * **DNS Issues:** If `oc login` fails, ensure your machine can resolve `api.crc.testing`. You may need to disable VPNs during the initial setup.
 
-## 📚 Resources
+## Resources
 
 - [Official Website](https://www.redhat.com/en/technologies/cloud-computing/openshift)
 - [Documentation](https://docs.openshift.com/)
