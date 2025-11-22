@@ -1,7 +1,7 @@
 # LXC-LXD
-<img src="logos/lxc.svg" width="120" alt="lxc logo"/>
+<img src="../../logos/lxc.svg" width="120" alt="lxc logo"/>
 
-<img src="logos/lxd.svg" width="120" alt="lxd logo"/>
+<img src="../../logos/lxd.svg" width="120" alt="lxd logo"/>
 
 ## Overview
 
