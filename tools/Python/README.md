@@ -1,5 +1,5 @@
 # Python
-<img src="logos/python.svg" width="120"/>
+<img src="logos/python.svg" width="120" alt="Python logo"/>
 
 ## Overview
 Programming language for quick integration, automation, and systems work.
@@ -13,7 +13,7 @@ Programming language for quick integration, automation, and systems work.
 Installation and basic usage instructions.
 
 Basic Setup:
-```
+```bash
 python3 -m venv .venv
 source .venv/bin/activate
 pip install requests pyyaml boto3
@@ -21,7 +21,7 @@ pip install requests pyyaml boto3
 
 
 ## Resources
-- Official Website: https://www.python.org
-- Documentation: https://docs.python.org/3/
-- GitHub Repository: https://github.com/python/cpython
-- RealPython Tutorials: https://realpython.com
+- [Official Website](https://www.python.org)
+- [Documentation](https://docs.python.org/3/)
+- [GitHub Repository](https://github.com/python/cpython)
+- [RealPython Tutorials](https://realpython.com)
