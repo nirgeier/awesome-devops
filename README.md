@@ -550,8 +550,6 @@
 | **[Streisand](tools/Streisand)** | Automated VPN service setup. |
 | **[VyOS](tools/VyOS)** | Open-source network OS for routing and firewall. |
 
-Tool | Description
-Apache HBase | ...
 ## Databases
 
 | Tool | Description |
