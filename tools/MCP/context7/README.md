@@ -86,18 +86,7 @@ The MCP server will fetch the latest Next.js App Router documentation and provid
 }
 ```
 
-### Local Server (NPX)
-
-```json
-{
-  "mcpServers": {
-    "context7": {
-      "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp@latest"]
-    }
-  }
-}
-```
+> "For other editors, refer to their MCP server configuration documentation."
 
 ### Auto-Invocation (Optional)
 
@@ -107,9 +96,12 @@ Add this rule to your editor settings to automatically use Context7:
 
 **Requirements:** Node.js 18.0.0 or higher
 
+### API Key (Optional)
+
+Context7 works without an API key with standard rate limits. For higher rate limits and private repository access, create an account at [context7.com/dashboard](https://context7.com/dashboard) to get an API key.
+
 ## Resources
 
 - [Official Website](https://context7.com)
 - [GitHub Repository](https://github.com/upstash/context7)
-- [NPM Package](https://www.npmjs.com/package/@upstash/context7-mcp)
 - [API Dashboard](https://context7.com/dashboard)
