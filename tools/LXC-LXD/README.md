@@ -1,7 +1,8 @@
 # LXC-LXD
-<img src="../../logos/lxc.svg" width="120" alt="lxc logo"/>
+![LXC Logo](../../logos/lxc.svg)
 
-<img src="../../logos/lxd.svg" width="120" alt="lxd logo"/>
+
+
 
 ## Overview
 
