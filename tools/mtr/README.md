@@ -14,4 +14,4 @@ Description of mtr from the main README.
 ```
 
 ## Resources
-- Official Website: https://example.com
+- Official Website: [Official Website](https://example.com)

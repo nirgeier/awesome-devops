@@ -590,19 +590,6 @@ Tool | Description
 **[usql](tools/usql)** | Universal command-line interface for SQL databases.
 **[TiDB](tools/TiDB)** | MySQL-compatible distributed SQL database designed for horizontal scalability and high availability.
 **[TiKV](tools/TiKV)** | Distributed, highly available transactional key-value store powering TiDB’s storage layer.
-=======
-| **[LevelDB](tools/LevelDB)** | Fast key-value storage library. |
-| **[MariaDB](tools/MariaDB)** | Fast, scalable, and robust database with a rich ecosystem. |
-| **[MySQL](tools/MySQL)** | Open-source relational database management system. |
-| **[PostgreSQL](tools/PostgreSQL)** | Powerful, open-source object-relational database system. |
-| **[RethinkDB](tools/RethinkDB)** | Open-source database for the real-time web. |
-| **[RocksDB](tools/RocksDB)** | Embeddable, persistent key-value store for fast storage. |
-| **[ScyllaDB](tools/ScyllaDB)** | NoSQL data store using the seastar framework, compatible with Apache Cassandra. |
-| **[SQLite](tools/SQLite)** | Small, fast, self-contained, high-reliability SQL database engine. |
-| **[usql](tools/usql)** | Universal command-line interface for SQL databases. |
-| **[TiDB](tools/TiDB)** | MySQL-compatible distributed SQL database designed for horizontal scalability and high availability. |
-| **[TiKV](tools/TiKV)** | Distributed, highly available transactional key-value store powering TiDB’s storage layer. |
->>>>>>> ee1d589 (Fix: corrected Networking Tools table formatting)
 
 ## Web Servers
 
