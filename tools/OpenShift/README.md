@@ -1,6 +1,6 @@
 # OpenShift
 
-![OpenShift Logo](../../../logos/openshift.svg)
+![OpenShift Logo](../../logos/redhatopenshift.svg)
 
 ## 📖 Table of Contents
 
