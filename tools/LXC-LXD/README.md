@@ -40,7 +40,6 @@ Containers are unprivileged by default and protected using AppArmor/SELinux, Sec
 
 ## Getting Started
 
-
 ## Installation
 
 LXC (Linux Containers) is supported on most major Linux distributions, including Ubuntu, Debian, Fedora, Arch Linux, CentOS/RHEL, Alpine Linux, and Gentoo. Essentially, any modern Linux distribution with a kernel version ≥ 2.6.32 and the required libraries can run LXC.
