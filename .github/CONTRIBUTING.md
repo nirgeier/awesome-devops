@@ -49,7 +49,7 @@
 ## Guidelines
 
 - **Tool Categories**: Place tools in the most appropriate category. If a new category is needed, discuss it in your PR.
-* **README Format**: Use the provided script to generate READMEs. Ensure all fields are filled accurately. READMEs must follow this structure:
+- **README Format**: Use the provided script to generate READMEs. Ensure all fields are filled accurately. READMEs must follow this structure:
   * `# Tool Name`
   * `![Tool Name Logo](../logos/tool-logo.svg)`
   * `## Overview`
