@@ -10,7 +10,7 @@ LXC (Linux Containers) is a low-level container runtime that provides OS-level v
 
 LXD is a system container and virtual machine manager built on top of LXC that provides a more user-friendly and enterprise-ready experience. It runs as a daemon and exposes a REST API and CLI for managing containers and VMs, offering features like image management, storage backends, snapshots, live migration, clustering, and advanced networking. While LXC focuses on the core container mechanics, LXD acts as a full platform that makes managing containers and virtual machines simpler, scalable, and suitable for production environments.
 
-## Differnce between LXC and LXD
+## Difference between LXC and LXD
 
 LXC and LXD are closely related but serve different roles in Linux containerization. LXC (Linux Containers) is the low-level technology that provides lightweight OS-level virtualization, using kernel features like namespaces and cgroups to create and manage containers that behave similarly to virtual machines but share the host kernel. 
 
