@@ -1,6 +1,6 @@
 # Cilium
 
-![Cilium Logo](https://raw.githubusercontent.com/cilium/cilium/main/logo/cilium-logo.svg)
+![Cilium Logo](../../../../logos/cilium.svg)
 
 ## Overview
 

@@ -512,6 +512,7 @@
 | **[Appium](tools/Appium)** | Mobile application testing framework. |
 | **[Bencher](tools/Bencher)** | Continuous benchmarking. |
 | **[Cypress](tools/Cypress)** | End-to-end testing framework. |
+| **[Diffblue](tools/Diffblue)** | AI-powered automated unit test generation and code analysis platform. |
 | **[Gatling](tools/Gatling)** | Load testing tool for web applications. |
 | **[IBM Rational Functional Tester](tools/IBM-Rational-Functional-Tester)** | Automated functional testing. |
 | **[JUnit](tools/JUnit)** | Unit testing framework for Java. |
