@@ -1,6 +1,6 @@
 # Terragrunt
 
-![Terragrunt Logo](../../logos/terragrunt.svg)
+![Terragrunt Logo](../logos/terragrunt.svg)
 
 ## Overview
 
