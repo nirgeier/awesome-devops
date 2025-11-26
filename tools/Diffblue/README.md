@@ -1,6 +1,6 @@
 # Diffblue
 
-![Diffblue Logo](../logos/diffblue.svg)
+![Diffblue Logo](../../logos/diffblue.svg)
 
 ## Overview
 
