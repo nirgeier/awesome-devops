@@ -137,6 +137,7 @@
 | **[Digger](tools/Digger)**                                                   | Open-source Infrastructure as Code management tool for CI/CD systems.                           |
 | **[Deployment.io](tools/Deployment.io)**                                     | DevOps co-pilot for developers to automate deployments to AWS.                                  |
 | **[Terrateam](tools/Terrateam)**                                            | Open-source alternative to Terraform Cloud with GitOps-first approach.                           |
+| **[Terragrunt](tools/Terragrunt)**                                           | Thin wrapper for Terraform that provides extra tools for managing multiple Terraform modules.    |
 | **[Atlantis](tools/Atlantis)**                                               | Terraform Pull Request Automation for automated infrastructure code reviews.                    |
 
 ## Configuration Management
