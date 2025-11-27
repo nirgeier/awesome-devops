@@ -124,20 +124,21 @@
 
 | Tool                                                                         | Description                                                                                    |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| **[Atlantis](tools/Atlantis)**                                               | Terraform Pull Request Automation for automated infrastructure code reviews.                    |
 | **[AWS CloudFormation](tools/AWS/CloudFormation)**                           | AWS service for modeling and provisioning cloud resources using templates.                     |
 | **[Azure Resource Manager (ARM)](tools/Azure/Resource-Manager)**             | Deployment and management service for Azure with template-based deployments.                   |
 | **[CDK (Cloud Development Kit)](tools/CDK)**                                 | AWS framework for defining cloud infrastructure using familiar programming languages.          |
 | **[Crossplane](tools/Crossplane)**                                           | Open-source Kubernetes add-on for managing cloud infrastructure.                               |
+| **[Digger](tools/Digger)**                                                   | Open-source Infrastructure as Code management tool for CI/CD systems.                           |
+| **[Deployment.io](tools/Deployment.io)**                                     | DevOps co-pilot for developers to automate deployments to AWS.                                  |
 | **[Google Cloud Deployment Manager](tools/Google/Cloud-Deployment-Manager)** | Infrastructure deployment service for Google Cloud Platform.                                   |
 | **[Pulumi](tools/Pulumi)**                                                   | Modern infrastructure as code platform supporting multiple programming languages.              |
-| **[Terraform](tools/Terraform)**                                             | HashiCorp's tool for building, changing, and versioning infrastructure safely and efficiently. |
 | **[Selefra](tools/Selefra)**                                                | Open-source policy-as-code software providing analytics for multi-cloud and SaaS.              |
 | **[Spacelift](tools/Spacelift)**                                             | Flexible orchestration solution for Infrastructure as Code development.                         |
 | **[Stacktape](tools/Stacktape)**                                             | Developer-friendly Infrastructure as Code framework built on top of AWS.                        |
-| **[Digger](tools/Digger)**                                                   | Open-source Infrastructure as Code management tool for CI/CD systems.                           |
-| **[Deployment.io](tools/Deployment.io)**                                     | DevOps co-pilot for developers to automate deployments to AWS.                                  |
+| **[Terraform](tools/Terraform)**                                             | HashiCorp's tool for building, changing, and versioning infrastructure safely and efficiently. |
 | **[Terrateam](tools/Terrateam)**                                            | Open-source alternative to Terraform Cloud with GitOps-first approach.                           |
-| **[Atlantis](tools/Atlantis)**                                               | Terraform Pull Request Automation for automated infrastructure code reviews.                    |
+| **[Terragrunt](tools/Terragrunt)**                                           | Thin wrapper for Terraform that provides extra tools for managing multiple Terraform modules.    |
 
 ## Configuration Management
 
