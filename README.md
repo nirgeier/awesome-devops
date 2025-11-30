@@ -64,6 +64,7 @@
 
 | Tool                                                                       | Description                                                                                                                                 |
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| **[act](tools/act)**                                                       | Run GitHub Actions locally using Docker for faster workflow development and testing.                                                        |
 | **[Argo](tools/Argo)**                                                     | Open Source Kubernetes native workflows, events, CI and CD.                                                                                 |
 | **[ArgoCD](tools/ArgoCD)**                                                 | Declarative GitOps continuous delivery tool for Kubernetes applications.                                                                    |
 | **[Bamboo](tools/Bamboo)**                                                 | Atlassian's CI/CD server that ties automated builds, tests, and releases together in a single workflow.                                     |
