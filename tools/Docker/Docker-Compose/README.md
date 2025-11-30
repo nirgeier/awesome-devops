@@ -1,36 +1,212 @@
-# Docker Compose
+# Docker UI + Database Project
 
-![Docker Compose](https://raw.githubusercontent.com/docker/compose/master/docs/_static/docker-compose-logo.png)
+This project demonstrates a simple 2-container Docker setup:
 
-## Overview
+- **UI Container (Flask App)**  
+  Receives values from a user and stores them in a database.
 
-Docker Compose is a tool for defining and running multi-container Docker applications using a YAML file (`docker-compose.yml`). It simplifies local development, testing, and simple deployments.
+- **DB Container (Lightweight Alpine)**  
+  Holds a persistent SQLite database file using a shared Docker volume.
 
-## Key Features
+---
 
-- Define multi-container apps with a single YAML file
-- Services, networks and volumes orchestration
-- One-command start/stop for the full app stack
-- Environment variable support and extension
-- Works with Docker CLI and Compose V2 plugin
+## 📂 Project Structure
 
-## Getting Started
+```
+project/
+│
+├── ui/
+│   ├── app.py                 # Flask application
+│   ├── requirements.txt       # Python dependencies
+│   ├── Dockerfile             # Dockerfile for UI container
+│   ├── templates/
+│   │   └── index.html         # HTML page for the browser UI
+│   └── static/
+│       └── styles.css         # CSS styling for the UI
+│
+├── db/
+│   └── Dockerfile             # Minimal Alpine container for database volume
+│
+└── docker-compose.yml         # Docker Compose configuration
+
+```
+
+---
+
+## How It Works
+
+### UI Container
+
+The UI is a Python Flask application that:
+
+1. Initializes a SQLite database (`database.db`) on startup.
+2. Exposes two API routes:
+
+#### POST `/add`
+Adds a new value to the DB.
+
+Example request:
+```bash
+curl -X POST http://localhost:5000/add \
+  -H "Content-Type: application/json" \
+  -d '{"value": "Hello World"}'
+```
+
+#### GET `/list`
+Returns all stored values.
+
+Example:
+```bash
+curl http://localhost:5000/list
+```
+
+---
+
+### DB Container
+
+This container does not run a database engine.  
+Instead, it:
+
+- Creates a `/data` directory
+- Hosts the SQLite database file  
+- Exposes the folder through a **Docker volume**, making the data persistent
+- Serves as a shared storage backend for the UI container
+
+This architecture keeps the DB separate and easily replaceable.
+
+---
+
+## Docker Compose Flow
+
+- A shared volume named **`dbdata`** is created.
+- The **db** container exposes `/data`.
+- The **ui** container mounts the same `/data` folder.
+- SQLite file `database.db` lives inside that shared volume.
+
+---
+
+## How to Run the Project From the browser:
+
+### 1. Clone the project
+```bash
+git clone <your-repository-url>
+cd project
+```
+
+### 2. Build and run with Docker Compose
+```bash
+docker compose up --build
+```
+
+You will see:
+
+- `db_service` → starts and waits  
+- `ui_service` → starts Flask on port **5000**
+
+### 3. Open the browser and run:
+
+``` bash
+http://localhost:5000
+```
+#### In the UI itself:
+- Enter a value in the input field and press "Add" button or press the Enter key.
+- Values are displayed in a table below.
+- The table automatically refreshes every 2 seconds to show all stored values.
+
+---
+
+
+## How to Run the Project from the CLI:
+
+### 1. Clone the project
+```bash
+git clone <your-repository-url>
+cd project
+```
+
+### 2. Build and run with Docker Compose
+```bash
+docker compose up --build
+```
+
+You will see:
+
+- `db_service` → starts and waits  
+- `ui_service` → starts Flask on port **5000**
+
+---
+
+### 3. Test the API
+
+### Add a value:
+```bash
+curl -X POST http://localhost:5000/add \
+  -H "Content-Type: application/json" \
+  -d '{"value": "Test"}'
+```
+
+### Get all values:
+```bash
+curl http://localhost:5000/list
+```
+
+---
+
+## What it should be like:
+
+### Input as example:
+
+``` bash 
+curl -X POST http://localhost:5000/add -H "Content-Type: application/json" -d '{"value": "This is only a test"}'
+```
+
+### Output should be something like:
+
+``` bash 
+{"message":"Value inserted successfully"}
+```
+
+## Result output:
+
+### When you run this:
+
+``` bash
+curl http://localhost:5000/list
+```
+
+### You should see the value you entered:
+
+``` bash 
+[{"id":1,"value":"This is only a test"}]
+```
+
+#### You can run and add another value, then list it. 
+#### Now you should see 2 records.
+
+
+
+
+## Stopping Everything
 
 ```bash
-# Install (Linux/macOS with Docker Desktop) - or use Compose V2 as a plugin
-docker compose version
-
-# Start services defined in docker-compose.yml
-docker compose up -d
-
-# View logs
-docker compose logs -f
-
-# Stop and remove containers
 docker compose down
 ```
 
-## Resources
+To delete the persistent DB:
 
-- [Official Website](https://docs.docker.com/compose/)
-- [GitHub](https://github.com/docker/compose)
+```bash
+docker volume rm project_dbdata
+```
+
+---
+
+## Notes
+
+- Database persists even after containers stop.
+- You can swap SQLite for PostgreSQL easily later.
+- Very useful structure for learning multi-container apps.
+
+---
+
+## Done!
+

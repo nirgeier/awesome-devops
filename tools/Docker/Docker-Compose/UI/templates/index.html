@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask UI + DB</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Flask UI + Database</h1>
+
+        <div class="input-group">
+            <input type="text" id="valueInput" placeholder="Enter value">
+            <button onclick="addValue()">Add</button>
+        </div>
+
+        <h2>Stored Values</h2>
+        <table id="valuesTable">
+            <tr>
+                <th>ID</th>
+                <th>Value</th>
+                <th>Timestamp</th>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        async function fetchValues() {
+            const res = await fetch('/list');
+            const data = await res.json();
+            const table = document.getElementById('valuesTable');
+
+            // Clear existing rows except header
+            table.innerHTML = '<tr><th>ID</th><th>Value</th><th>Timestamp</th></tr>';
+
+            data.forEach(row => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `<td>${row.id}</td><td>${row.value}</td><td>${row.timestamp}</td>`;
+                table.appendChild(tr);
+            });
+        }
+
+        async function addValue() {
+            const input = document.getElementById('valueInput');
+            const value = input.value.trim();
+            if (!value) return alert('Please enter a value.');
+
+            await fetch('/add', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ value })
+            });
+
+            input.value = '';
+            fetchValues();
+        }
+
+        // Press Enter to add value
+        document.getElementById('valueInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                addValue();
+            }
+        });
+
+        // Fetch values every 2 seconds
+        setInterval(fetchValues, 2000);
+        fetchValues();
+    </script>
+</body>
+</html>
+
