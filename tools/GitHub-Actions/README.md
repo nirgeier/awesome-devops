@@ -151,6 +151,12 @@ After pushing your workflow file to the repository, GitHub Actions will automati
 
 This allows you to debug failures, monitor CI/CD progress in real-time, and verify that your pipeline stages complete successfully.
 
+### Step 2: Testing Workflows Locally
+
+Before pushing changes to GitHub, you can test workflows locally using **[act](../act)** - a tool that runs GitHub Actions on your local machine using Docker. This speeds up development by letting you iterate on workflows without committing and pushing changes.
+
+Learn more: **[act - Run GitHub Actions Locally](../act/README.md)**
+
 ## Advanced Example: Building and Publishing Docker Images
 
 The following workflow demonstrates how to build a Docker image and push it to a container registry:
