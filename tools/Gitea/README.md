@@ -1,6 +1,6 @@
 # Gitea
 
-<img src="../../logos/gitea.svg" alt="LXC Logo" width="120"/>
+<img src="../../logos/gitea.svg" alt="Gitea Logo" width="120"/>
 
 ## Overview
 
