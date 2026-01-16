@@ -70,7 +70,7 @@ Linux kernel >= 3.12
 
 
 
-**LXD Installation-**
+### LXD Installation
 
 LXD is supported primarily on Linux distributions that have Snapd available (like Ubuntu, Debian, Fedora, Arch, CentOS, and more information inside this [link](https://snapcraft.io/lxd?_gl=1*1f0ig8*_ga*MTEzNDgxMTkzOC4xNzYzODUxMDQ1*_ga_5LTL1CNEJM*czE3NjM4NTEwNDQkbzEkZzEkdDE3NjM4NTEwNTAkajU0JGwwJGgw#distros) ). 
 
