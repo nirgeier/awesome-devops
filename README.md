@@ -42,6 +42,7 @@
 - [SSL](#ssl)
 - [GitOps](#gitops)
 - [MCP](#mcp)
+- [Networking Tools](#networking-tools)
 
 ## Version Control
 
@@ -123,20 +124,21 @@
 
 | Tool                                                                         | Description                                                                                    |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| **[Atlantis](tools/Atlantis)**                                               | Terraform Pull Request Automation for automated infrastructure code reviews.                    |
 | **[AWS CloudFormation](tools/AWS/CloudFormation)**                           | AWS service for modeling and provisioning cloud resources using templates.                     |
 | **[Azure Resource Manager (ARM)](tools/Azure/Resource-Manager)**             | Deployment and management service for Azure with template-based deployments.                   |
 | **[CDK (Cloud Development Kit)](tools/CDK)**                                 | AWS framework for defining cloud infrastructure using familiar programming languages.          |
 | **[Crossplane](tools/Crossplane)**                                           | Open-source Kubernetes add-on for managing cloud infrastructure.                               |
+| **[Digger](tools/Digger)**                                                   | Open-source Infrastructure as Code management tool for CI/CD systems.                           |
+| **[Deployment.io](tools/Deployment.io)**                                     | DevOps co-pilot for developers to automate deployments to AWS.                                  |
 | **[Google Cloud Deployment Manager](tools/Google/Cloud-Deployment-Manager)** | Infrastructure deployment service for Google Cloud Platform.                                   |
 | **[Pulumi](tools/Pulumi)**                                                   | Modern infrastructure as code platform supporting multiple programming languages.              |
-| **[Terraform](tools/Terraform)**                                             | HashiCorp's tool for building, changing, and versioning infrastructure safely and efficiently. |
 | **[Selefra](tools/Selefra)**                                                | Open-source policy-as-code software providing analytics for multi-cloud and SaaS.              |
 | **[Spacelift](tools/Spacelift)**                                             | Flexible orchestration solution for Infrastructure as Code development.                         |
 | **[Stacktape](tools/Stacktape)**                                             | Developer-friendly Infrastructure as Code framework built on top of AWS.                        |
-| **[Digger](tools/Digger)**                                                   | Open-source Infrastructure as Code management tool for CI/CD systems.                           |
-| **[Deployment.io](tools/Deployment.io)**                                     | DevOps co-pilot for developers to automate deployments to AWS.                                  |
+| **[Terraform](tools/Terraform)**                                             | HashiCorp's tool for building, changing, and versioning infrastructure safely and efficiently. |
 | **[Terrateam](tools/Terrateam)**                                            | Open-source alternative to Terraform Cloud with GitOps-first approach.                           |
-| **[Atlantis](tools/Atlantis)**                                               | Terraform Pull Request Automation for automated infrastructure code reviews.                    |
+| **[Terragrunt](tools/Terragrunt)**                                           | Thin wrapper for Terraform that provides extra tools for managing multiple Terraform modules.    |
 
 ## Configuration Management
 
@@ -511,6 +513,7 @@
 | **[Appium](tools/Appium)** | Mobile application testing framework. |
 | **[Bencher](tools/Bencher)** | Continuous benchmarking. |
 | **[Cypress](tools/Cypress)** | End-to-end testing framework. |
+| **[Diffblue](tools/Diffblue)** | AI-powered automated unit test generation and code analysis platform. |
 | **[Gatling](tools/Gatling)** | Load testing tool for web applications. |
 | **[IBM Rational Functional Tester](tools/IBM-Rational-Functional-Tester)** | Automated functional testing. |
 | **[JUnit](tools/JUnit)** | Unit testing framework for Java. |
@@ -549,24 +552,46 @@
 | **[Streisand](tools/Streisand)** | Automated VPN service setup. |
 | **[VyOS](tools/VyOS)** | Open-source network OS for routing and firewall. |
 
+
 ## Databases
 
 | Tool | Description |
 |------|-------------|
-| **[Apache HBase](tools/Apache/HBase)** | Distributed, versioned, non-relational database. |
-| **[Cassandra](tools/Cassandra)** | Manage massive amounts of data, fast, without losing sleep. |
+| **[Apache HBase](tools/ApacheHBase)** | Distributed, versioned, non-relational database. |
+| **[Cassandra](tools/Cassandra)** | Manage massive amounts of data fast, without losing sleep. |
 | **[Couchbase](tools/Couchbase)** | Distributed multi-model NoSQL document-oriented database. |
 | **[CouchDB](tools/CouchDB)** | Database that completely embraces the web. |
 | **[etcd](tools/etcd)** | Distributed reliable key-value store for critical data. |
 | **[LevelDB](tools/LevelDB)** | Fast key-value storage library. |
-| **[MariaDB](tools/MariaDB)** | Fast, scalable, and robust database with a rich ecosystem. |
+| **[MariaDB](tools/MariaDB)** | Fast, scalable, and robust relational database. |
 | **[MySQL](tools/MySQL)** | Open-source relational database management system. |
-| **[PostgreSQL](tools/PostgreSQL)** | Powerful, open-source object-relational database system. |
+| **[PostgreSQL](tools/PostgreSQL)** | Powerful, open-source object-relational database. |
 | **[RethinkDB](tools/RethinkDB)** | Open-source database for the real-time web. |
 | **[RocksDB](tools/RocksDB)** | Embeddable, persistent key-value store for fast storage. |
-| **[ScyllaDB](tools/ScyllaDB)** | NoSQL data store using the seastar framework, compatible with Apache Cassandra. |
-| **[SQLite](tools/SQLite)** | Small, fast, self-contained, high-reliability SQL database engine. |
+| **[ScyllaDB](tools/ScyllaDB)** | NoSQL data store using the Seastar framework. |
+| **[SQLite](tools/SQLite)** | Small, fast, self-contained, high-reliability SQL engine. |
 | **[usql](tools/usql)** | Universal command-line interface for SQL databases. |
+| **[TiDB](tools/TiDB)** | MySQL-compatible distributed SQL database designed for horizontal scalability and high availability. |
+| **[TiKV](tools/TiKV)** | Distributed, highly available transactional key-value store powering TiDB’s storage layer. |
+
+Tool | Description
+---- | -----------
+**[Apache HBase](tools/ApacheHBase)** | Distributed, versioned, non-relational database.
+**[Cassandra](tools/Cassandra)** | Manage massive amounts of data fast, without losing sleep.
+**[Couchbase](tools/Couchbase)** | Distributed multi-model NoSQL document-oriented database.
+**[CouchDB](tools/CouchDB)** | Database that completely embraces the web.
+**[etcd](tools/etcd)** | Distributed reliable key-value store for critical data.
+**[LevelDB](tools/LevelDB)** | Fast key-value storage library.
+**[MariaDB](tools/MariaDB)** | Fast, scalable, and robust relational database.
+**[MySQL](tools/MySQL)** | Open-source relational database management system.
+**[PostgreSQL](tools/PostgreSQL)** | Powerful, open-source object-relational database.
+**[RethinkDB](tools/RethinkDB)** | Open-source database for the real-time web.
+**[RocksDB](tools/RocksDB)** | Embeddable, persistent key-value store for fast storage.
+**[ScyllaDB](tools/ScyllaDB)** | NoSQL data store using the Seastar framework.
+**[SQLite](tools/SQLite)** | Small, fast, self-contained, high-reliability SQL engine.
+**[usql](tools/usql)** | Universal command-line interface for SQL databases.
+**[TiDB](tools/TiDB)** | MySQL-compatible distributed SQL database designed for horizontal scalability and high availability.
+**[TiKV](tools/TiKV)** | Distributed, highly available transactional key-value store powering TiDB’s storage layer.
 
 ## Web Servers
 
@@ -587,6 +612,16 @@
 | **[Certbot](tools/Certbot)** | Automate using Let's Encrypt certificates on manually-managed websites. |
 | **[Let's Encrypt](tools/Lets-Encrypt)** | Free, automated, and open Certificate Authority. |
 
+## Networking Tools
+
+| Tool | Description |
+|------|-------------|
+| **[dig](tools/dig/)** | DNS lookup utility for querying DNS servers. |
+| **[nslookup](tools/nslookup/)** | DNS record lookup tool for troubleshooting DNS records. |
+| **[tcpdump](tools/tcpdump/)** | Packet capture and low-level network traffic analysis tool. |
+| **[mtr](tools/mtr/)** | Combined ping + traceroute tool for deep network diagnostics. |
+| **[nmap](tools/nmap/)** | Network scanning and security auditing tool for discovering hosts & services. |
+
 ## MCP
 
 | Tool | Description |
@@ -601,6 +636,15 @@
 | **[mindsdb](tools/MCP/mindsdb/)** | AI-powered database management and analytics. |
 | **[playwright-mcp](tools/MCP/playwright-mcp/)** | Browser automation and web scraping with Playwright. |
 | **[serena](tools/MCP/serena/)** | AI-powered development assistant. |
+
+## Networking Tools
+Tool | Description
+---- | -----------
+dig | DNS lookup utility for querying DNS servers.
+nslookup | Basic DNS lookup tool for DNS records troubleshooting.
+tcpdump | Packet capture and network traffic analysis tool.
+mtr | Combined ping and traceroute tool for deep network diagnostics.
+nmap | Network scanning and security auditing tool for discovering hosts and services.
 
 ---
 

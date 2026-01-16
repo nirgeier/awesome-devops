@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <style>
+      .terragrunt-bg { fill: #4B7B3A; }
+      .terragrunt-text { fill: #FFFFFF; font-family: Arial, sans-serif; font-size: 120px; font-weight: bold; }
+    </style>
+  </defs>
+  <rect class="terragrunt-bg" width="256" height="256" rx="32"/>
+  <text class="terragrunt-text" x="128" y="180" text-anchor="middle">T</text>
+</svg>
