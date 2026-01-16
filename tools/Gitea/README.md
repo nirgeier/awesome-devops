@@ -8,11 +8,11 @@ Gitea is a lightweight, self-hosted Git service written in Go. It provides a sim
 
 ## Key Features
 
-- Git hosting & collaboration: repositories, branches/tags, web code browsing, and access control. Source
-- Pull Requests & code review: review workflows with comments and merge support. Source
-- CI/CD with Gitea Actions: GitHub Actions–compatible workflow approach. Source
-- Package Registry: supports many package types for private/public artifact hosting. Source
-- Fast and resource-efficient: designed to remain lightweight while supporting modern Git workflows. Source
+- Git hosting & collaboration: repositories, branches/tags, web code browsing, and access control.
+- Pull Requests & code review: review workflows with comments and merge support.
+- CI/CD with Gitea Actions: GitHub Actions–compatible workflow approach.
+- Package Registry: supports many package types for private/public artifact hosting.
+- Fast and resource-efficient: designed to remain lightweight while supporting modern Git workflows.
 
 ## Getting Started
 
@@ -24,7 +24,7 @@ Create a working directory:
 
 `mkdir gitea && cd gitea`
 Create docker-compose.yml
-```
+```yaml
 version: "3"
 
 networks:
@@ -51,7 +51,7 @@ services:
 ```
 Notes:
 
-If you use host volumes, ensure the mapped folder is owned by the UID/GID you set, otherwise the container may not start. Source
+If you use host volumes, ensure the mapped folder is owned by the UID/GID you set, otherwise the container may not start. See https://docs.gitea.com/installation/docker/#volumes
 After first start, config will be written to /data/gitea/conf/app.ini
 
 Start Gitea:
@@ -63,16 +63,20 @@ Complete setup in the browser:
 ### Option B: Install from Binary (Linux)
 
 Download + install the binary:
-```
+```bash
 wget -O gitea https://dl.gitea.com/gitea/1.25.3/gitea-1.25.3-linux-amd64
 chmod +x gitea
 sudo cp gitea /usr/local/bin/gitea
 ```
 Prepare the environment
 Check that Git is installed (Gitea requires Git >= 2.0):
-`git --version`
-Create required directories:
+
+```bash
+git --version
 ```
+
+Create required directories:
+```bash
 sudo mkdir -p /var/lib/gitea/{custom,data,log}
 sudo chown -R git:git /var/lib/gitea
 sudo chmod -R 750 /var/lib/gitea
