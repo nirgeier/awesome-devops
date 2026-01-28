@@ -537,6 +537,7 @@
 | **[Deductive.ai](tools/Deductive.ai)** | AI-powered SRE and DevOps automation. |
 | **[Resolve.ai](tools/Resolve.ai)** | AI for incident resolution. |
 | **[Sherlocks.ai](tools/Sherlocks.ai)** | AI SRE assistant for monitoring and alerting. |
+| **[Metoro](tools/Metoro)** | AI SRE for Kubernetes teams. |
 
 ## VPN
 

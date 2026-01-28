@@ -103,6 +103,7 @@ create_readme "tools/Zephyr" "Zephyr" "Test management tool."
 create_readme "tools/Deductive.ai" "Deductive.ai" "AI-powered SRE and DevOps automation."
 create_readme "tools/Resolve.ai" "Resolve.ai" "AI for incident resolution."
 create_readme "tools/Sherlocks.ai" "Sherlocks.ai" "AI SRE assistant for monitoring and alerting."
+create_readme "tools/Metoro" "Metoro" "AI SRE for Kubernetes teams."
 
 create_readme "tools/AWS/CloudWatch" "AWS CloudWatch" "Amazon's monitoring and observability service for AWS resources and applications."
 create_readme "tools/Better-Stack" "Better Stack" "Uptime monitoring, incident management, and status pages."
