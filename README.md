@@ -136,6 +136,7 @@
 | **[Selefra](tools/Selefra)**                                                | Open-source policy-as-code software providing analytics for multi-cloud and SaaS.              |
 | **[Spacelift](tools/Spacelift)**                                             | Flexible orchestration solution for Infrastructure as Code development.                         |
 | **[Stacktape](tools/Stacktape)**                                             | Developer-friendly Infrastructure as Code framework built on top of AWS.                        |
+| **[Stategraph](tools/Stategraph)**                                           | Terraform and OpenTofu without the state file bottleneck.                                       |
 | **[Terraform](tools/Terraform)**                                             | HashiCorp's tool for building, changing, and versioning infrastructure safely and efficiently. |
 | **[Terrateam](tools/Terrateam)**                                            | Open-source alternative to Terraform Cloud with GitOps-first approach.                           |
 | **[Terragrunt](tools/Terragrunt)**                                           | Thin wrapper for Terraform that provides extra tools for managing multiple Terraform modules.    |
