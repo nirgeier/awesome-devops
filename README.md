@@ -206,6 +206,7 @@
 | **[InfluxDB](tools/InfluxDB)** | Time series database. |
 | **[Instatus](tools/Instatus)** | Quick and beautiful status page. |
 | **[Keep](tools/Keep)** | Open-source alerting CLI for developers. |
+| **[KubeStellar Console](https://github.com/kubestellar/console)** | Open source AI-powered multi-cluster Kubernetes dashboard with real-time observability, CNCF integrations (Prometheus, Grafana, Argo, Kyverno, and 20+ others), and edge/cloud cluster management. CNCF Sandbox project. |
 | **[Last9](tools/Last9)** | OpenTelemetry-native observability platform for APM, metrics, logs, and traces, built to handle high-cardinality data at scale. |
 | **[Levitate](tools/Levitate)** | A Managed Time Series Metrics and Events Warehouse built to handle High Cardinality data. |
 | **[LibreNMS](tools/LibreNMS)** | Fork of Observium. |
