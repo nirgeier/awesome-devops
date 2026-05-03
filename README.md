@@ -363,6 +363,7 @@
 | **[Backstage](tools/Backstage)** | Open platform for building developer portals. |
 | **[Kratix](tools/Kratix)** | Framework for platform teams to build custom platforms tailored to organizations. |
 | **[Port](tools/Port)** | Platform for building no-code, holistic Internal Developer Portals. |
+| **[KubeStellar Console](tools/KubeStellar-Console)** | AI-powered multi-cluster Kubernetes management console with 150+ dashboard cards, AI agent integration, and GitOps support. |
 
 ## Service Discovery
 
