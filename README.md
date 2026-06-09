@@ -536,6 +536,7 @@
 |------|-------------|
 | **[Deductive.ai](tools/Deductive.ai)** | AI-powered SRE and DevOps automation. |
 | **[Resolve.ai](tools/Resolve.ai)** | AI for incident resolution. |
+| **[KnoxOps](tools/KnoxOps)** | AI-native ops agent for production-safe execution with human review and a built-in knowledge graph. |
 | **[Sherlocks.ai](tools/Sherlocks.ai)** | AI SRE assistant for monitoring and alerting. |
 
 ## VPN
