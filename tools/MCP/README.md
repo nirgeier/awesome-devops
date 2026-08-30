@@ -18,6 +18,7 @@ The Model Context Protocol (MCP) is a standard for connecting AI assistants to e
 - [mindsdb](mindsdb/) - AI-powered database management and analytics
 - [playwright-mcp](playwright-mcp/) - Browser automation and web scraping with Playwright
 - [serena](serena/) - AI-powered development assistant
+- [SandBase-Harness](SandBase-Harness/) - Local-first agent runtime and MCP bridge for governed DevOps automation
 
 ## Resources
 

@@ -636,6 +636,7 @@ Tool | Description
 | **[mindsdb](tools/MCP/mindsdb/)** | AI-powered database management and analytics. |
 | **[playwright-mcp](tools/MCP/playwright-mcp/)** | Browser automation and web scraping with Playwright. |
 | **[serena](tools/MCP/serena/)** | AI-powered development assistant. |
+| **[SandBase-Harness](tools/MCP/SandBase-Harness/)** | Local-first agent runtime and MCP bridge for governed DevOps automation. |
 
 ## Networking Tools
 Tool | Description
