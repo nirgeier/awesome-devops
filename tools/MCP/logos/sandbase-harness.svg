@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">SandBase Harness</title>
+  <desc id="desc">SandBase Harness logo</desc>
+  <rect width="64" height="64" rx="14" fill="#111827"/>
+  <path d="M18 20h28v8H26v4h14c4.4 0 8 3.6 8 8s-3.6 8-8 8H18v-8h20v-4H26c-4.4 0-8-3.6-8-8s3.6-8 8-8Z" fill="#38bdf8"/>
+</svg>
