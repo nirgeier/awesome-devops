@@ -22,4 +22,4 @@ Install the CLI or run the public MCP bridge with Docker. Follow the [installati
 - [GitHub Repository](https://github.com/sandbaseai/sandbase-harness)
 - [Latest Release](https://github.com/sandbaseai/sandbase-harness/releases/latest)
 - [Installation Guide](https://github.com/sandbaseai/sandbase-harness/blob/main/docs/installation.md)
-- [Security Boundary](https://github.com/sandbaseai/sandbase-harness/blob/main/docs/security.md)
+- [Sandbox Backends and Security Boundary](https://github.com/sandbaseai/sandbase-harness/blob/main/docs/usage.md#sandbox-backends)
