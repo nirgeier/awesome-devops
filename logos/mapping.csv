@@ -1,2 +1,2 @@
-tool_path,svg,status
-tools/Agent-QA,logos/agent-qa.svg,exists
+tool_path,slug,svg,status
+tools/Agent-QA,agent-qa,logos/agent-qa.svg,exists
