@@ -509,6 +509,7 @@
 | Tool | Description |
 |------|-------------|
 | **[accelQ](tools/accelQ)** | Continuous testing platform. |
+| **[Agent QA](tools/Agent-QA)** | Natural-language web and mobile application testing with execution memory, a CLI, dashboard, and MCP tools. |
 | **[Apache jMeter](tools/Apache-jMeter)** | Load testing tool. |
 | **[Appium](tools/Appium)** | Mobile application testing framework. |
 | **[Bencher](tools/Bencher)** | Continuous benchmarking. |
