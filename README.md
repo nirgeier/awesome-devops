@@ -362,6 +362,7 @@
 |------|-------------|
 | **[Backstage](tools/Backstage)** | Open platform for building developer portals. |
 | **[Kratix](tools/Kratix)** | Framework for platform teams to build custom platforms tailored to organizations. |
+| **[Nife](tools/Nife)** | Internal developer platform for deploying and operating applications across public cloud, edge, Kubernetes, bare metal, and private infrastructure from one control plane. |
 | **[Port](tools/Port)** | Platform for building no-code, holistic Internal Developer Portals. |
 
 ## Service Discovery
