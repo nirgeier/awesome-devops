@@ -1,6 +1,6 @@
-# Agent-QA
+# Agent QA
 
-![Agent-QA Logo](../../logos/agent-qa.svg)
+![Agent QA logo](../../logos/agent-qa.svg)
 
 ## Overview
 
@@ -27,4 +27,3 @@ Follow the official quickstart to initialize a workspace, configure a model and 
 - [Official Website](https://vostride.com)
 - [Documentation](https://vostride.com/docs/agent-qa/quickstart)
 - [GitHub Repository](https://github.com/vostride/agent-qa)
-
