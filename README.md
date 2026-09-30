@@ -363,6 +363,7 @@
 | **[Backstage](tools/Backstage)** | Open platform for building developer portals. |
 | **[Kratix](tools/Kratix)** | Framework for platform teams to build custom platforms tailored to organizations. |
 | **[Port](tools/Port)** | Platform for building no-code, holistic Internal Developer Portals. |
+| **[Peon](tools/Peon)** | Open-source self-hosted Docker PaaS with project RBAC, audit logs, and MCP for AI agents. |
 
 ## Service Discovery
 
