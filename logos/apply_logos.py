@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Replace leading external logo images in tools/**/README.md with local SVGs
-found in tools/logos/. Uses mapping.csv when available to map tool dirs
+found in logos/. Uses mapping.csv when available to map tool dirs
 to downloaded SVG filenames.
 """
 import csv
@@ -24,10 +24,10 @@ if MAPPING.exists():
             svg = r.get('svg','').strip()
             status = r.get('status','').strip()
             if tp and svg and status in ('downloaded','exists'):
-                mapping[os.path.normpath(tp)] = svg
+                mapping[os.path.normpath(str(ROOT / tp))] = str(ROOT / svg)
 
 updated = []
-for md in Path(ROOT.parent).rglob('README.md'):
+for md in (ROOT / 'tools').rglob('README.md'):
     try:
         text = md.read_text()
     except Exception:
