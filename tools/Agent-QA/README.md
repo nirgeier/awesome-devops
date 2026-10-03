@@ -1,4 +1,4 @@
-# Agent QA
+# Agent-QA
 
 ![Agent QA logo](../../logos/agent-qa.svg)
 
