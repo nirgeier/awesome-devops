@@ -240,6 +240,7 @@
 | **[Seyren](tools/Seyren)** | An alerting dashboard for Graphite. |
 | **[Shinken](tools/Shinken)** | Monitoring framework. |
 | **[Shynet](tools/Shynet)** | Modern, privacy-friendly, and cookie-free web analytics. |
+| **[SiteWatcher](tools/SiteWatcher)** | Self-hosted monitoring for website availability, response times, and certificate and domain expiry. |
 | **[StatusList.app](tools/StatusList.app)** | Uptime monitoring with debug details and hosted status page in one dashboard. |
 | **[StatusPal](tools/StatusPal)** | Communicate incidents and maintenance effectively. |
 | **[Tig](tools/Tig)** | Text-mode interface for Git. |
